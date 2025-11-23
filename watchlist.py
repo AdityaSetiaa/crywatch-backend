@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .auth import get_current_user, get_db
-from .models import WatchlistItem
-from .schemas import WatchlistCreate, WatchlistUpdate, WatchlistResponse
+from auth import get_current_user, get_db
+from models import WatchlistItem
+from schemas import WatchlistCreate, WatchlistUpdate, WatchlistResponse
 
 router = APIRouter()
 

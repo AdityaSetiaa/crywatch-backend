@@ -1,10 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.orm import Session
-from .database import engine, Base
-from .models import User
-from .schemas import UserCreate, UserLogin, UserResponse
-from .auth import hash_password, verify_password, create_token, get_db, get_current_user
-from .watchlist import router as watchlist_router
+from database import engine, Base
+from models import User
+from schemas import UserCreate, UserLogin, UserResponse
+from auth import hash_password, verify_password, create_token, get_db, get_current_user
+from watchlist import router as watchlist_router
 
 from fastapi.middleware.cors import CORSMiddleware
 
